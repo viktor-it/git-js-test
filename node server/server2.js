@@ -2,7 +2,7 @@ let http = require('http');
 let fs = require('fs');
 
 http.createServer(function(req, res) {
-	fs.readFile('/server_test/server.js', 'utf8', function(err, data){
+	fs.readFile('server.js', 'utf8', function(err, data){
 		res.writeHead(200, {'content-type':'text/plain'});
 		if (err)
 			res.write("Can't find or open file for reading\n");
