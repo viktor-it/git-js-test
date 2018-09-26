@@ -12,4 +12,4 @@ http.createServer(function(req, res) {
 
 }).listen(8124);
 
-console.log("Сервер запущен по порту - 8124");
+console.log("Сервер запущен на 8124");
